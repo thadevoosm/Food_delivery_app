@@ -5,7 +5,8 @@ import 'package:delivery_app/themes/theme_provide.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MultiProvider(
+  runApp(
+    MultiProvider(
     providers: [
       ChangeNotifierProvider(create: (context) => ThemeProvider()),
       ChangeNotifierProvider(create: (context) => Restaurant()),
